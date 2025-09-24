@@ -12,4 +12,4 @@ conn_params = {
 with psycopg.connect(**conn_params) as conn:
     with conn.cursor() as cur:
         cur.execute("ALTER TABLE estudiantes ADD COLUMN edad INT CHECK (edad > 0);")
-        print("Las Columna 'edad' fue agregada con CHECK (edad > 0) en estudiantes.")
+        print("La Columna 'edad' fue agregada con CHECK (edad > 0) en estudiantes.")

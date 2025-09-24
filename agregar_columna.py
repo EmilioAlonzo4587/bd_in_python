@@ -11,5 +11,5 @@ conn_params = {
 
 with psycopg.connect(**conn_params) as conn:
     with conn.cursor() as cur:
-        cur.execute("ALTER TABLE estudiantes ADD COLUMN edad INT;")
-        print("La Columna 'edad' fue agregada en estudiantes.")
+        cur.execute("ALTER TABLE estudiantes ADD COLUMN genero VARCHAR;")
+        print("La Columna 'genero' fue agregada en estudiantes.")
